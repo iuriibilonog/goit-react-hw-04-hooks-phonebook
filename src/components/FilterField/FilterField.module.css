@@ -1,0 +1,16 @@
+.filterTitle {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.filterInput {
+  max-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.filterInput:hover,
+.filterInput:focus {
+  outline: 1px solid blue;
+}

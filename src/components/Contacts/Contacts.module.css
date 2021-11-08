@@ -1,0 +1,57 @@
+/* .contactsList {
+ 
+} */
+
+.contactItem {
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.contactsName {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.contactsNumber {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.delBtn {
+  color: #000000;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: 2px solid #3d94f6;
+  border-radius: 5px;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.delBtn:hover {
+  color: #000;
+  background-color: transparent;
+  text-shadow: nthree;
+}
+.delBtn:hover:before {
+  left: 0%;
+  right: auto;
+  width: 100%;
+}
+.delBtn:before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 0px;
+  z-index: -1;
+  content: "";
+  color: #000;
+  background: #3d94f6;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.delBtn:active {
+  background-color: white;
+}

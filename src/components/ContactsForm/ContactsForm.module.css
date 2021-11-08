@@ -1,0 +1,63 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.inputTitle {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.inputField {
+  max-width: 200px;
+  margin-bottom: 10px;
+  margin: 5px auto;
+}
+
+.inputField:hover,
+.inputField:focus {
+  outline: 1px solid #3d94f6;
+}
+
+.addContactBtn {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 100px;
+  color: #000000;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: 2px solid #3d94f6;
+  border-radius: 5px;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.addContactBtn:hover {
+  color: #000;
+  background-color: transparent;
+  text-shadow: nthree;
+}
+.addContactBtn:hover:before {
+  left: 0%;
+  right: auto;
+  width: 100%;
+}
+.addContactBtn:before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 0px;
+  z-index: -1;
+  content: "";
+  color: #000;
+  background: #3d94f6;
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.addContactBtn:active {
+  background-color: white;
+}
